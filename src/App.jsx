@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 
 
-import "./css/style.css";
 
 import "./charts/ChartjsConfig";
 
@@ -22,8 +21,8 @@ function App() {
   return (
     <>
       <Routes>
-        <Route exact path="/" element={<Dashboard />} />
-        <Route exact path="/login" element={<Login/>} />
+        <Route exact path="/admin" element={<Dashboard />} />
+        <Route exact path="/adminlogin" element={<Login/>} />
       </Routes>
     </>
   );
